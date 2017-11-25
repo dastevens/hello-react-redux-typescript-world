@@ -18,7 +18,7 @@ with extra npm dependencies added using the following commands:
 
 `npm install --save-dev @types/redux @types/react-redux`
 
-Then I put all the typescript code into index.ts and reduced it to the bare minimum to fire up a react app with a redux store.
+Then I put all the typescript code into `src/index.tsx` and reduced it to the bare minimum to fire up a react app with a redux store.
 
 ## Setup
 
