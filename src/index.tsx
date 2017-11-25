@@ -7,7 +7,7 @@ const AppComponent = (props: AppProps) => <p>{props.propsMessage}</p>;
 
 // redux boilerplate
 import { createStore } from 'redux';
-import { connect, Provider } from 'react-redux';
+import { connect } from 'react-redux';
 class StoreState {
     storeMessage: string;
 }
@@ -18,6 +18,7 @@ const store = createStore(reducer);
 
 // Render the app
 import * as ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 ReactDOM.render(
     <Provider store={store}><AppContainer /></Provider>,
     document.getElementById('root')
